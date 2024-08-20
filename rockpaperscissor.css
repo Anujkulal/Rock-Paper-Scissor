@@ -24,11 +24,22 @@ h1{
 }
 
 .choice{
-    padding: 30px;
-    border: 2px solid black;
-    border-radius: 95px;
-    margin: 20px;
+    background-color: rgb(174, 214, 248);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
     cursor: pointer;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imoji{
+    transition: 0.5s;
+}
+
+.imoji:hover{
+    transform: scale(1.5);
 }
 
 #scissor{
@@ -36,7 +47,7 @@ h1{
 }
 
 .choice:hover{
-    background-color: rgb(202, 196, 196);
+    background-color: rgb(146, 201, 248);
 }
 
 .imoji{
