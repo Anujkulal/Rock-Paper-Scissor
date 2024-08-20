@@ -9,7 +9,6 @@ const compScorePara = document.querySelector("#comp-score");
 const userChoiceDisplay = document.querySelector("#user-choice-display");
 const compChoiceDisplay = document.querySelector("#comp-choice-display");
 
-
 const drawGame = () =>{
     console.log("Game was draw");
     msg.style.backgroundColor = "rgb(29, 29, 65)"
