@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
-    <link rel="stylesheet" href="rockpaperscissor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Rock Paper Scissor</h1>
-        <div class="choices">
-            <div id="rock" class="choice">
-            <p class="imoji">🪨</p>
-        </div>
-        <div id="paper" class="choice">
-            <p class="imoji">📄</p>
-        </div>
-        <div id="scissor" class="choice">
-            <p class="imoji">✂</p>
-        </div>
-    </div>
-    
-    <div class="score-board">
-        <div class="display-choice">
-           <p>Me: &nbsp;</p> <p id="user-choice-display"></p>
-        </div>
-        
-        <div class="score">
-            <p id="user-score" class="number">0</p>
-            <p class="player">You</p>
-        </div>
-        <div class="score">
-            <p id="comp-score" class="number">0</p>
-            <p class="player">Computer</p>
-        </div>
 
-        <div class="display-choice">
-          <p>🤖: &nbsp;</p>  <p id="comp-choice-display"></p>
+<body>
+    <div class="container">
+        <div class="child-container">
+            <h2>Rock Paper Scissors</h2>
+            <div class="score-board">
+
+                <div class="user-score-box">
+                    <h4>You</h4>
+                    <span id="user-score">0</span>
+                </div>
+                <div class="game-status">
+                    <h4></h4>
+                </div>
+                <div class="comp-score-box">
+                    <h4>Bot</h4>
+                    <span id="comp-score">0</span>
+                </div>
+            </div>
+            <div class="circle">
+                <button id="rock" class="buttons"><i class="fa-solid fa-hand-back-fist"></i></button>
+                <button id="paper" class="buttons"><i class="fa-solid fa-hand"></i></button>
+                <button id="scissor" class="buttons"><i class="fa-solid fa-hand-scissors"></i></button>
+
+                <div class="reset-btn">
+                    <button id="reset"><i class="fa-solid fa-rotate-right"></i></button>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <div class="msg-container">
-        <p id="msg">Play your move</p>
-    </div>
-    <script src="rockpaperscissor.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
